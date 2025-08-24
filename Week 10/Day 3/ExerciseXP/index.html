@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POST and GET Forms</title>
+  </head>
+  <body>
+    <h2>Get Users with GET method</h2>
+    <form method="GET" action="https://jsonplaceholder.typicode.com/users">
+      <input type="number" name="id" />
+      <input type="submit" value="Get Users" />
+    </form>
+
+    <h2>Search on Google</h2>
+    <form method="GET" action="https://search.yahoo.com/search" target="_blank">
+      <input type="text" name="p" />
+      <input type="submit" value="Search" />
+    </form>
+
+    <h2>Add a post to post list with POST method</h2>
+    <form method="POST" action="https://jsonplaceholder.typicode.com/posts" target="_blank">
+      <input type="text" name="title" placeholder="title" /><br />
+      <input type="text" name="body" placeholder="body" /><br />
+      <input type="number" name="userId" placeholder="userId" /><br />
+      <input type="submit" value="Add Post" />
+    </form>
+
+    <!-- POST request to → https://users-18kl.onrender.com/user -->
+    <!-- name, email, username -->
+
+    <form method="POST" action="https://users-18kl.onrender.com/user" target="_blank">
+      <input type="text" name="name" value="Anania" placeholder="name" required /><br />
+      <input type="text" name="username" value="anania123" placeholder="username" required /><br />
+      <input type="email" name="email" value="anania@example.com" placeholder="email" required /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

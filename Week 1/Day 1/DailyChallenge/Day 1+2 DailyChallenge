@@ -1,0 +1,31 @@
+#Daily Challenge Day 1
+#Ask for User Input:
+
+user_string = input("ABCDEFGHIJ")
+
+#2. Check the Lenght of the String:
+
+if len(user_string) < 10:
+    print(" string not long enough")
+elif len(user_string) > 10:
+    print("string too long.")
+else:
+    print("Perfect string")
+
+#3. Print the First and Last Characters:
+print("First character:", user_string[0])
+print("Last character:", user_string[-1])
+
+#4. Build the string Character by Character:
+new_string = ""
+for char in user_string:
+    new_string = new_string + char
+    print(new_string)
+
+#5. Bonus : Jumble the String (Optional):
+import random
+char_list = list(user_string) 
+random.Shuffle(char_list)
+jumble_string = "".join(char_list)
+pint("jumble_string:", jumble_string)
+
